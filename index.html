@@ -6,13 +6,21 @@
 	<title>Natalie Tenis Beas — Writing in Psychology</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/styles.css">
-	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%235dd6ff'/%3E%3Cstop offset='1' stop-color='%237b7bff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='12' fill='url(%23g)'/%3E%3C/svg%3E">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%236366f1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3C/svg%3E">
 </head>
 <body>
+	<!-- Ambient Background -->
+	<div class="ambient-bg">
+		<div class="ambient-orb orb-1"></div>
+		<div class="ambient-orb orb-2"></div>
+		<div class="ambient-orb orb-3"></div>
+	</div>
+	<div class="grid-pattern"></div>
+
 	<header class="nav">
-		<div class="container nav-inner">
+		<div class="nav-inner">
 			<a class="brand" href="index.html">
 				<span class="brand-badge"></span>
 				<span>Natalie Tenis Beas</span>
@@ -27,59 +35,345 @@
 	</header>
 
 	<main>
+		<!-- Hero Section -->
 		<section class="hero">
-			<div class="container hero-grid">
-				<div class="reveal reveal-1">
-					<div class="kicker">Writing in Psychology — 10/01/2025</div>
-					<h1 class="h1 gradient-text">Correction vs. Connection: The Lasting Impacts of Educator Feedback</h1>
-					<p class="subtitle">Final project presenting snapshots, a full essay, and sources showing that feedback isn’t just about correction—it’s about connection. Thoughtful, process‑based comments nurture motivation and identity; harsh, vague remarks leave lasting harm.</p>
-					<div class="inline-list">
-						<a class="button" href="draft.html">Read the Essay</a>
-						<a class="button secondary" href="sources.html">View Sources</a>
-					</div>
+			<div class="container">
+				<span class="hero-badge">Writing in Psychology • Final Project 2025</span>
+				<h1>Correction vs. <span>Connection</span></h1>
+				<p class="hero-subtitle">
+					How does educator feedback shape student identity? This research explores the transformative—and sometimes destructive—power of the words teachers choose.
+				</p>
+				<div class="hero-actions">
+					<a class="btn btn-primary" href="#explore">
+						Explore Research
+						<svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+					</a>
+					<a class="btn btn-secondary" href="draft.html">Read Full Essay</a>
 				</div>
-				<div class="hero-card reveal reveal-2">
-					<div class="section-header">
-						<h3 class="section-title">Quick Summary</h3>
+			</div>
+			<div class="hero-decoration"></div>
+		</section>
+
+		<!-- Stats Section -->
+		<section class="stats-section">
+			<div class="container">
+				<div class="stats-grid">
+					<div class="stat-card reveal reveal-1">
+						<div class="stat-number">3</div>
+						<div class="stat-label">Peer-Reviewed Sources</div>
 					</div>
-					<p class="section-desc">Feedback is never neutral. Supportive, process‑focused comments build resilience and self‑regulated learning; vague or harsh criticism can erode confidence and silence voices. Research by Sherma (2025), Truax (2018), and Zhu et al. (2024) underlines these long‑term effects.</p>
-					<div class="inline-list" style="margin-top:12px;">
-						<span class="tag">Growth Mindset</span>
-						<span class="tag">Emotional Well‑being</span>
-						<span class="tag">SRL Strategies</span>
+					<div class="stat-card reveal reveal-2">
+						<div class="stat-number">3</div>
+						<div class="stat-label">Student Snapshots</div>
+					</div>
+					<div class="stat-card reveal reveal-3">
+						<div class="stat-number">7</div>
+						<div class="stat-label">Key Insights</div>
+					</div>
+					<div class="stat-card reveal reveal-4">
+						<div class="stat-number">1</div>
+						<div class="stat-label">Core Thesis</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="section">
+		<!-- Tabbed Content Section -->
+		<section class="tabs-section" id="explore">
 			<div class="container">
-				<div class="section-header">
-					<h2 class="section-title">Explore</h2>
-					<p class="section-desc">Jump into the key parts of this project.</p>
+				
+				<!-- Tab Navigation -->
+				<div class="tabs-nav">
+					<button class="tab-btn active" data-tab="overview">Overview</button>
+					<button class="tab-btn" data-tab="findings">Findings</button>
+					<button class="tab-btn" data-tab="snapshots">Snapshots</button>
+					<button class="tab-btn" data-tab="sources">Sources</button>
 				</div>
-				<div class="grid">
-					<a class="card reveal reveal-1" href="draft.html" style="text-decoration:none;">
-						<h3 class="card-title">Final Essay</h3>
-						<p>Structured narrative connecting class snapshots to peer‑reviewed findings with an emphasis on confidence and long‑term literacy journeys.</p>
-					</a>
-					<a class="card reveal reveal-2" href="sources.html" style="text-decoration:none;">
-						<h3 class="card-title">Scholarly Sources</h3>
-						<p>Curated citations with links to full texts and DOIs.</p>
-					</a>
-					<a class="card reveal reveal-3" href="snapshots.html" style="text-decoration:none;">
-						<h3 class="card-title">Snapshots</h3>
-						<p>PDF snapshots referenced throughout the draft.</p>
-					</a>
+
+				<!-- Tab: Overview -->
+				<div class="tab-content active" id="tab-overview">
+					<div class="bento-grid">
+						<div class="bento-card span-6 reveal reveal-1">
+							<div class="bento-icon">
+								<!-- Search Document Icon -->
+								<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+									<polyline points="14 2 14 8 20 8"></polyline>
+									<line x1="16" y1="13" x2="8" y2="13"></line>
+									<line x1="16" y1="17" x2="8" y2="17"></line>
+									<polyline points="10 9 9 9 8 9"></polyline>
+								</svg>
+							</div>
+							<h3>The Research Question</h3>
+							<p>How does educator feedback—whether supportive or dismissive—shape how students see themselves as writers and learners?</p>
+						</div>
+						<div class="bento-card span-6 reveal reveal-2">
+							<div class="bento-icon">
+								<!-- Git/Workflow Icon -->
+								<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<circle cx="12" cy="5" r="2"></circle>
+									<circle cx="6" cy="12" r="2"></circle>
+									<circle cx="18" cy="19" r="2"></circle>
+									<line x1="12" y1="7" x2="12" y2="13"></line>
+									<path d="M6 14c0 2.5 2.5 3 5 4"></path>
+									<path d="M18 17c0-2.5-2.5-3-5-4"></path>
+								</svg>
+							</div>
+							<h3>The Approach</h3>
+							<p>Combining peer-reviewed research from Sherma, Truax, and Zhu with real student experiences to reveal patterns in feedback impact.</p>
+						</div>
+						<div class="bento-card span-4 reveal reveal-3">
+							<div class="bento-icon">
+								<!-- Sprout Icon -->
+								<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<path d="M2 22h20"></path>
+									<path d="M12 22v-7"></path>
+									<path d="M12 15a5 5 0 0 0-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 0-5 5z"></path>
+								</svg>
+							</div>
+							<h3>Growth Mindset</h3>
+							<p>Process-focused feedback nurtures resilience and confidence in students.</p>
+						</div>
+						<div class="bento-card span-4 reveal reveal-4">
+							<div class="bento-icon">
+								<!-- Heart Pulse Icon -->
+								<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+								</svg>
+							</div>
+							<h3>Emotional Wellbeing</h3>
+							<p>Harsh feedback can cause lasting psychological harm to developing writers.</p>
+						</div>
+						<div class="bento-card span-4 reveal reveal-1">
+							<div class="bento-icon">
+								<!-- Sliders/Control Icon -->
+								<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+									<line x1="4" y1="21" x2="4" y2="14"></line>
+									<line x1="4" y1="10" x2="4" y2="3"></line>
+									<line x1="12" y1="21" x2="12" y2="12"></line>
+									<line x1="12" y1="8" x2="12" y2="3"></line>
+									<line x1="20" y1="21" x2="20" y2="16"></line>
+									<line x1="20" y1="12" x2="20" y2="3"></line>
+									<line x1="1" y1="14" x2="7" y2="14"></line>
+									<line x1="9" y1="8" x2="15" y2="8"></line>
+									<line x1="17" y1="16" x2="23" y2="16"></line>
+								</svg>
+							</div>
+							<h3>Self-Regulation</h3>
+							<p>Scaffolded comments teach students to become independent learners.</p>
+						</div>
+					</div>
+
+					<div class="feature-section reveal">
+						<div class="feature-content">
+							<span class="feature-label">Core Thesis</span>
+							<h2>Feedback isn't just about correction—it's about connection.</h2>
+							<p>
+								When educators provide <strong>thoughtful, process-based feedback</strong>, they nurture motivation and identity. 
+								When comments are <strong>harsh, vague, and dismissive</strong>, they leave lasting impressions that shape how students see themselves as learners—long after the grade is forgotten.
+							</p>
+						</div>
+					</div>
 				</div>
+
+				<!-- Tab: Key Findings -->
+				<div class="tab-content" id="tab-findings">
+					<div class="findings-grid reveal">
+						<div class="finding-card">
+							<span class="finding-label">Sherma, 2025</span>
+							<h4>Psychology of Feedback</h4>
+							<p>"Merely giving feedback may not be helpful if instructors neglect the psychology intrinsically associated with it. Corrective feedback tends to discourage aspiring writers."</p>
+						</div>
+						<div class="finding-card">
+							<span class="finding-label">Truax, 2018</span>
+							<h4>Growth Mindset Language</h4>
+							<p>"Comments like 'I can tell you put a lot of effort into this' help students develop a growth mindset. Correcting and criticizing undermines motivation."</p>
+						</div>
+						<div class="finding-card">
+							<span class="finding-label">Zhu et al., 2024</span>
+							<h4>Self-Regulated Learning</h4>
+							<p>"Scaffolding feedback provides step-by-step cues and models to help students learn how to generate correct answers independently."</p>
+						</div>
+						<div class="finding-card">
+							<span class="finding-label">Synthesis</span>
+							<h4>The Pattern That Emerges</h4>
+							<p>Feedback is power. Every word tells a student 'I see your effort'—or 'I don't.' The difference shapes voices for years to come.</p>
+						</div>
+					</div>
+
+					<div class="cta-section reveal">
+						<h3>Want the complete analysis?</h3>
+						<p>Read the full essay with detailed case studies and research synthesis.</p>
+						<a class="btn btn-accent" href="draft.html">
+							Read Full Essay
+							<svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+						</a>
+					</div>
+				</div>
+
+				<!-- Tab: Snapshots -->
+				<div class="tab-content" id="tab-snapshots">
+					<div class="snapshots-grid reveal">
+						<article class="snapshot-card">
+							<div class="snapshot-header"></div>
+							<div class="snapshot-body">
+								<span class="snapshot-label">Snapshot A</span>
+								<h3 class="snapshot-title">Graded in Red</h3>
+								<p class="snapshot-meta">Heavy red-ink criticism on first college essay</p>
+								<ul class="snapshot-list">
+									<li>Excitement turned to self-doubt after receiving a bold red "C"</li>
+									<li>Effort felt invalidated; success felt borrowed, not earned</li>
+									<li>Vague, harsh feedback eroded confidence and writer identity</li>
+								</ul>
+								<a class="btn btn-secondary btn-sm" href="https://drive.google.com/file/d/1oM6Gxu0y8qZPQxXNmFQVa8meyzzZmjX/preview" target="_blank" rel="noopener">View Document →</a>
+							</div>
+						</article>
+
+						<article class="snapshot-card">
+							<div class="snapshot-header"></div>
+							<div class="snapshot-body">
+								<span class="snapshot-label">Snapshot B</span>
+								<h3 class="snapshot-title">Tutoring Transformation</h3>
+								<p class="snapshot-meta">Patient one-on-one guidance with Ms. Taylor</p>
+								<ul class="snapshot-list">
+									<li>Reading together reframed writing as a rewarding challenge</li>
+									<li>Sessions became something to anticipate, not dread</li>
+									<li>Process-focused feedback nurtured growth mindset</li>
+								</ul>
+								<a class="btn btn-secondary btn-sm" href="https://drive.google.com/file/d/1RvjVcDk6inS9tuG1fv1GD0pKNWzwPqHv/preview" target="_blank" rel="noopener">View Document →</a>
+							</div>
+						</article>
+
+						<article class="snapshot-card">
+							<div class="snapshot-header"></div>
+							<div class="snapshot-body">
+								<span class="snapshot-label">Snapshot C</span>
+								<h3 class="snapshot-title">Strategy Over Scores</h3>
+								<p class="snapshot-meta">Self-regulated learning through scaffolding</p>
+								<ul class="snapshot-list">
+									<li>Scaffolded comments built planning and revising habits</li>
+									<li>Criticism without guidance discourages strategy use</li>
+									<li>Long-term gains come from cultivated SRL strategies</li>
+								</ul>
+								<a class="btn btn-secondary btn-sm" href="https://drive.google.com/file/d/1L2MlVuUBDw1TI-Dj2SC7259bfvgJYig1/preview" target="_blank" rel="noopener">View Document →</a>
+							</div>
+						</article>
+					</div>
+				</div>
+
+				<!-- Tab: Sources -->
+				<div class="tab-content" id="tab-sources">
+					<div class="sources-grid reveal">
+						<article class="source-card">
+							<span class="source-number">1</span>
+							<div class="source-content">
+								<h3 class="source-title">Teachers' Feedback and Students' Emotional Wellbeing in Writing Courses</h3>
+								<p class="source-meta">Sherma, A. B. (2025) • Journal of English Learner Education, 17(1)</p>
+							</div>
+							<a class="source-link" href="https://stars.library.ucf.edu/jele/vol17/iss1/9" target="_blank" rel="noopener">
+								Access
+								<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+							</a>
+						</article>
+
+						<article class="source-card">
+							<span class="source-number">2</span>
+							<div class="source-content">
+								<h3 class="source-title">The Impact of Teacher Language and Growth Mindset Feedback on Writing Motivation</h3>
+								<p class="source-meta">Truax, M. L. (2018) • Literacy Research and Instruction, 57(2)</p>
+							</div>
+							<a class="source-link" href="https://doi.org/10.1080/19388071.2017.1340529" target="_blank" rel="noopener">
+								Access
+								<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+							</a>
+						</article>
+
+						<article class="source-card">
+							<span class="source-number">3</span>
+							<div class="source-content">
+								<h3 class="source-title">Relationships between Teacher Feedback and English Writing Proficiency</h3>
+								<p class="source-meta">Zhu, Jinyu, et al. (2024) • System, 123</p>
+							</div>
+							<a class="source-link" href="https://doi.org/10.1016/j.system.2024.103338" target="_blank" rel="noopener">
+								Access
+								<svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+							</a>
+						</article>
+					</div>
+				</div>
+
 			</div>
 		</section>
 	</main>
 
 	<footer class="footer">
 		<div class="container">
-			<div>© 2025 Natalie Tenis Beas • Writing in Psychology</div>
+			<p>© 2025 Natalie Tenis Beas • Writing in Psychology • University of San Francisco</p>
 		</div>
 	</footer>
+
+	<script>
+		// Tab functionality with smooth transitions
+		document.querySelectorAll('.tab-btn').forEach(btn => {
+			btn.addEventListener('click', () => {
+				// Remove active from all
+				document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+				document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+				
+				// Activate clicked tab
+				btn.classList.add('active');
+				const tabId = btn.getAttribute('data-tab');
+				document.getElementById('tab-' + tabId).classList.add('active');
+			});
+		});
+
+		// Intersection Observer for reveal animations
+		const observerOptions = {
+			threshold: 0.01,
+			rootMargin: '0px 0px -20px 0px'
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.style.animationPlayState = 'running';
+					observer.unobserve(entry.target);
+				}
+			});
+		}, observerOptions);
+
+		document.querySelectorAll('.reveal').forEach(el => {
+			el.style.animationPlayState = 'paused';
+			observer.observe(el);
+		});
+
+		// Smooth scroll for anchor links
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
+				e.preventDefault();
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					target.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+			});
+		});
+
+		// Parallax effect for ambient orbs
+		document.addEventListener('mousemove', (e) => {
+			const orbs = document.querySelectorAll('.ambient-orb');
+			const x = e.clientX / window.innerWidth;
+			const y = e.clientY / window.innerHeight;
+			
+			orbs.forEach((orb, i) => {
+				const speed = (i + 1) * 15;
+				const xMove = (x - 0.5) * speed;
+				const yMove = (y - 0.5) * speed;
+				orb.style.transform = `translate(${xMove}px, ${yMove}px)`;
+			});
+		});
+	</script>
 </body>
 </html>
